@@ -1,3 +1,6 @@
+import * as THREE from 'https://unpkg.com/three@0.154.0/build/three.module.js';
+import { PointerLockControls } from 'https://unpkg.com/three@0.154.0/examples/jsm/controls/PointerLockControls.js';
+
 let camera, scene, renderer, controls;
 let objects = [];
 const move = { forward: false, backward: false, left: false, right: false };
@@ -15,7 +18,7 @@ function init() {
   light.position.set(0, 200, 0);
   scene.add(light);
 
-  controls = new THREE.PointerLockControls(camera, document.body);
+  controls = new PointerLockControls(camera, document.body);
   document.addEventListener('click', () => {
     controls.lock();
   });

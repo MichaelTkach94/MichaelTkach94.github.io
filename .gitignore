@@ -21,3 +21,9 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.log
+
+# Internal tools and documents
+Pet3D_Presentation.pdf
+create_presentation.py
+download_hamster.py
+*.pdf
